@@ -1,0 +1,15 @@
+{
+  "__version__": "1.0.0",
+  "port": "8888",
+  "b": {
+    "name": "Game",
+    "v": "1",
+    "shuchuLJ": "D:\\my_new_game\\cc_mu2/build",
+    "asar": true,
+    "isNode": true,
+    "isCover": true,
+    "appVersion": "1.0.0",
+    "icon": "D:\\my_new_game\\cc_mu2\\extensions\\发布WINDOWS Lite/icon/icon.ico",
+    "jg": "2"
+  }
+}

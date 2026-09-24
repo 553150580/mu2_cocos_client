@@ -1,0 +1,12 @@
+{
+  "name": "cc_mu2",
+  "uuid": "e9e5943b-10eb-4603-b84b-eb1e4e47910a",
+  "creator": {
+    "version": "3.8.7"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "crypto-es": "^3.1.2",
+    "crypto-js": "^4.2.0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "__version__": "1.0.6",
+  "general": {
+    "designResolution": {
+      "width": 750,
+      "height": 1334,
+      "fitHeight": true,
+      "fitWidth": false
+    }
+  },
+  "layer": [
+    {
+      "name": "Battle",
+      "value": 1
+    },
+    {
+      "name": "Floor",
+      "value": 2
+    }
+  ],
+  "custom_joint_texture_layouts": [],
+  "physics": {
+    "collisionGroups": [],
+    "collisionMatrix": {
+      "0": 1,
+      "1": 0
+    }
+  },
+  "sorting-layer": {
+    "layers": [
+      {
+        "id": 0,
+        "name": "default",
+        "value": 0
+      },
+      {
+        "id": 1,
+        "name": "body_equip",
+        "value": 1
+      }
+    ],
+    "increaseId": 11
+  }
+}
