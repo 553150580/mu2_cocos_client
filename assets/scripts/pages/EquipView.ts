@@ -1451,8 +1451,9 @@ export class EquipView extends Component {
             let equip:outer_pb.IEquip=this.selectedItem;
             const et = equip.Id/10000>>0
             if(equip.Lv>0&&(et==EquipType.Em||et==EquipType.TianShi||et==EquipType.XunZhang||et==EquipType.Horse)){
-                if(GD.role.hasEnoughDia(5000)){
-                    UIMgr.I.PopView.showSliderBox(`将该装备拆成2个，请设置拆出新装备的等级<br/>新装备的等级=设置的数值-1<br/><color=${ct.qing}>每次拆分需要：5000钻石</>`,ct.brown,equip.Lv,'拆分',(num:number)=>{
+                UIMgr.I.PopView.showSliderBox(`将该装备拆成2个，请设置拆出新装备的等级<br/>新装备的等级=设置的数值-1<br/><color=${ct.qing}>拆分需要：2000钻石x拆分数量</>`,ct.brown,equip.Lv,'拆分',(num:number)=>{
+                    let need=num*2000
+                    if(GD.role.hasEnoughDia(need)){
                         let req = outer_pb.PetAct.create();
                         req.Uid1=equip.Uid;
                         req.Num=num;
@@ -1474,8 +1475,8 @@ export class EquipView extends Component {
                                 UIMgr.I.tip('无法拆分')
                             }
                         })
-                    })
-                }
+                    }
+                })
             }
         }
     }
