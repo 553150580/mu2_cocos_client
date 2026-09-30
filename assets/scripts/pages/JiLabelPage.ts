@@ -100,6 +100,7 @@ export class JiLabelPage extends BasePage {
     }
     initData(data:any){
         this.refreshHaveLabel()
+        this.doList.refresh()
     }
 }
 

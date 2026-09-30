@@ -1216,7 +1216,7 @@ export class ZmPage extends BasePage {
                     nextLvExp=500
                     curLvExp=exp
                 }
-                info=`<color=${ct.gray}>您的战盟在本期跨服攻城中的护盾星级：<br/>最终星级=加成星级+升级星级<br/>加成星级=(开服天数-60)/15<br/>(星级可消耗敌人对我方的破城次数)</><br/><br/>你的加成星级：<color=${ct.blue}>${data.Cell.HuDunLv}星</><br/><color=${ct.gray}>(最高5星，每15天减1星)</><br/><br/>当前升级星级：<color=${ct.blue}>${lv}星（${curLvExp}/${nextLvExp}）</><br/><color=${ct.gray}>(可用战盟金币进行升级，每袋金币+1经验)</><color=${ct.gray}><br/>(最高可升至5星)</>`
+                info=`<color=${ct.gray}>您的战盟在本期跨服攻城中的护盾星级：<br/>最终星级=加成星级+升级星级<br/>加成星级=5-(开服天数-60)/15<br/>(星级可消耗敌人对我方的破城次数)</><br/><br/>你的加成星级：<color=${ct.blue}>${data.Cell.HuDunLv}星</><br/><color=${ct.gray}>(最高5星，每15天减1星)</><br/><br/>当前升级星级：<color=${ct.blue}>${lv}星（${curLvExp}/${nextLvExp}）</><br/><color=${ct.gray}>(可用战盟金币进行升级，每袋金币+1经验)</><color=${ct.gray}><br/>(最高可升至5星)</>`
             }else{
                 info='您的战盟未参加本期跨服攻城'
             }

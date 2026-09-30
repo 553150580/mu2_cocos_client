@@ -2904,8 +2904,6 @@ export class UIMgr extends Component {
         }
         let t = b.children[0].getComponent(RichText);
         t.string = `<outline color=#000000><b><color=${color}>${text}</></></>`;
-        // t.string = `<b><color=${color}>${text}</></>`;
-        // t.color.fromHEX(color);
         let com = b.getComponent(BaseComponent)
         com.width = text.length*23+40;
         this.tipMsgBox.addChild(b);
@@ -2916,7 +2914,6 @@ export class UIMgr extends Component {
             node.position=pos;
         })
         this.scheduleOnce(()=>{
-            // let y = pos.y+300
             tween(com).to(1.5,{opacity:0},{easing:'quartOut'}).call(()=>{
                 b.removeFromParent();
                 Pools.tipMsgPool.push(b);
@@ -2945,7 +2942,6 @@ export class UIMgr extends Component {
         let com = b.getComponent(BaseComponent)
         com.width = msg.length*24+5;
         com.widget.left=0;
-
         if(isTop){
             this.topMsgInfoBox.addChild(b);
             b.setSiblingIndex(0)
@@ -2964,8 +2960,6 @@ export class UIMgr extends Component {
             })
         }
         this.scheduleOnce(()=>{
-            // let com = b.getComponent(BaseComponent)
-            // let y = pos.y+250
             tween(com).to(1.5,{opacity:0},{easing:'quartOut'}).call(()=>{
                 b.removeFromParent();
                 Pools.proMsgPool.push(b);
