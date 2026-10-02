@@ -19,51 +19,51 @@ export namespace SDK {
     export function login(): Promise<{data:any}> {
         return new Promise((resolve, reject) => {
             //========测试代码===============
-            let info:any=new SdkUserInfo()
-            // info.uid= 'SY21_500261514'//东风5c
-            // info.uid= 'SY21_500277164';//风在起时
-            // info.uid= 'SY21_500250762';//我的
-            // info.uid= 'SY21_500250672';//我的
-            // info.uid= 'SY21_500250552';//古怪
-            // info.uid='SY21_500253049'//四喜丸子
-            // info.uid='SY21_500250496'//'妖姬花'
-            // info.uid='SY21_500250481'//'老汤'
-            info.uid= 'SY21_500250492';//紫月的 
-            // info.uid= 'SY21_500250768';//玄天的 
-            // info.uid= 'SY21_500250515';//无忧无虑的
-            info.uid= 'SY21_500250475';//静的
-            // info.uid= 'SY21_500261514';//LZ1
-            // info.uid= 'SY21_500329769';
-            // info.uid= 'SY21_500293221';//Jy的
-            // info.uid= 'SY21_500280673';//三季人
-            // info.uid= 'SY21_500251261';//世界的
-            // info.uid= 'SY21_500250487';//欢喜哥的
-            // info.uid= 'SY21_500254780';//准时熬夜的 
-            // info.uid= 'SY21_500250491' //疯狂的驴子
-            // info.uid= 'SY21_500269866';//咸鱼的
-            // info.uid= 'SY21_500251107'//兜兜1
-            // info.uid= 'SY21_500253049';//酸菜肉丝
-            // info.uid= 'SY21_500250483';//酸菜肉丝
-            // info.uid = 'SY21_500287643'; //老邓
-            info.uname='500250492'
-            info.sid='1'
-            info.ts=Date.now()/1000>>0
-            info.sign=''
-            resolve(info)
+            // let info:any=new SdkUserInfo()
+            // // info.uid= 'SY21_500261514'//东风5c
+            // // info.uid= 'SY21_500277164';//风在起时
+            // // info.uid= 'SY21_500250762';//我的
+            // // info.uid= 'SY21_500250672';//我的
+            // // info.uid= 'SY21_500250552';//古怪
+            // // info.uid='SY21_500253049'//四喜丸子
+            // // info.uid='SY21_500250496'//'妖姬花'
+            // // info.uid='SY21_500250481'//'老汤'
+            // info.uid= 'SY21_500250492';//紫月的 
+            // // info.uid= 'SY21_500250768';//玄天的 
+            // // info.uid= 'SY21_500250515';//无忧无虑的
+            // info.uid= 'SY21_500250475';//静的
+            // // info.uid= 'SY21_500261514';//LZ1
+            // // info.uid= 'SY21_500329769';
+            // // info.uid= 'SY21_500293221';//Jy的
+            // // info.uid= 'SY21_500280673';//三季人
+            // // info.uid= 'SY21_500251261';//世界的
+            // // info.uid= 'SY21_500250487';//欢喜哥的
+            // // info.uid= 'SY21_500254780';//准时熬夜的 
+            // // info.uid= 'SY21_500250491' //疯狂的驴子
+            // // info.uid= 'SY21_500269866';//咸鱼的
+            // // info.uid= 'SY21_500251107'//兜兜1
+            // // info.uid= 'SY21_500253049';//酸菜肉丝
+            // // info.uid= 'SY21_500250483';//酸菜肉丝
+            // // info.uid = 'SY21_500287643'; //老邓
+            // info.uname='500250492'
+            // info.sid='1'
+            // info.ts=Date.now()/1000>>0
+            // info.sign=''
+            // resolve(info)
 
             //========正式上线代码============
-            // if (window.DFIssuerSDK){
-            //     const sdk = (window as any).DFIssuerSDK; 
-            //     sdk.getLoginInfo({callback:(res: any) => {
-            //         if (res.code === 0) {
-            //             resolve(res.data);
-            //         } else {
-            //             reject(res.msg);
-            //         }
-            //     }});
-            // }else {
-            //     reject('window.DFIssuerSDK不存在');
-            // }
+            if (window.DFIssuerSDK){
+                const sdk = (window as any).DFIssuerSDK; 
+                sdk.getLoginInfo({callback:(res: any) => {
+                    if (res.code === 0) {
+                        resolve(res.data);
+                    } else {
+                        reject(res.msg);
+                    }
+                }});
+            }else {
+                reject('window.DFIssuerSDK不存在');
+            }
             //================================
         });
     }

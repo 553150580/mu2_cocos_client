@@ -46,10 +46,10 @@ export function installDataViewBigIntPolyfill() {
   }
 export default class WS{
     static c:WebSocket;
-    // static GameHomeUrl:string = 'wss://mu.nbmu.online';//远程游戏服（固定地址了，后期应该改为动态从登录服配置中获取）
-    // static login_url:string = 'wss://mu.nbmu.online:448'; //远程服务器地址
-    static GameHomeUrl:string = 'ws://127.0.0.1';//本地测试游戏服地址
-    static login_url:string = 'ws://127.0.0.1:448'; //本地测试服务器
+    static GameHomeUrl:string = 'wss://mu.nbmu.online';//远程游戏服（固定地址了，后期应该改为动态从登录服配置中获取）
+    static login_url:string = 'wss://mu.nbmu.online:448'; //远程服务器地址
+    // static GameHomeUrl:string = 'ws://127.0.0.1';//本地测试游戏服地址
+    // static login_url:string = 'ws://127.0.0.1:448'; //本地测试服务器
 
 
     static update_url:string = 'http://mu2.nbmu.online/Hotupdate/' //app更新地址

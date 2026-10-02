@@ -2346,7 +2346,7 @@ export class ZmPage extends BasePage {
                 `<color=${lv>=9?ct.blue:ct.gray}>杀怪泡点任务奖励经验提升+${lv<9?'(2xLv)':2*lv*upRate>>0}%</>`,
                 `<color=${lv>=10?ct.purple:ct.gray}>所有元素防御力+${lv<10?'(10xLv)':10*lv*upRate>>0}</>`,
                 `<color=${lv>=11?ct.brown:ct.gray}>伤害提升+${lv<11?'(2xLv)':2*lv*upRate>>0}%</>`,
-                `<color=${lv>=12?ct.purple:ct.gray}>对BOSS伤害提升+${lv<12?'(2xLv)':3*lv*upRate>>0}%</>`,
+                `<color=${lv>=12?ct.purple:ct.gray}>对BOSS伤害提升+${lv<12?'(2xLv)':2*lv*upRate>>0}%</>`,
                 `<color=${lv>=13?ct.purple:ct.gray}>所有技能等级+${5*upRate>>0}</>`,
             ]
         }

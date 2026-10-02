@@ -11,7 +11,7 @@ import { MaterialPool } from "./Pools";
 /**GameData */
 export default class GD  {
     //热更新配置文件
-    static subVersion: number = 140                //热更版本（每次发布新版本后，需要手动写上最新的版本号，用于浏览器提示更新）
+    static subVersion: number = 141                //热更版本（每次发布新版本后，需要手动写上最新的版本号，用于浏览器提示更新）
     static mainVersion: string = "1.0"           //主版本
     static showVersion: string = this.mainVersion + "." + this.subVersion;  //版本号
     //热更新目录
